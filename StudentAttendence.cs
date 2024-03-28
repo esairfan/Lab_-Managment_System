@@ -147,6 +147,7 @@ namespace DBproject
                             command.Parameters.AddWithValue("@Status", status);
 
                             int rowsAffected = command.ExecuteNonQuery();
+                            // Atendance Shehdules 
                             if (rowsAffected > 0)
                             {
                                 MessageBox.Show("Attendance saved successfully.");
@@ -190,6 +191,11 @@ namespace DBproject
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

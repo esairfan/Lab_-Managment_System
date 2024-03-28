@@ -92,7 +92,7 @@ namespace DBproject
             this.dtpAttendanceDate.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpAttendanceDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpAttendanceDate.Location = new System.Drawing.Point(207, 136);
-            this.dtpAttendanceDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpAttendanceDate.Margin = new System.Windows.Forms.Padding(2);
             this.dtpAttendanceDate.Name = "dtpAttendanceDate";
             this.dtpAttendanceDate.Size = new System.Drawing.Size(177, 23);
             this.dtpAttendanceDate.TabIndex = 40;
@@ -107,7 +107,7 @@ namespace DBproject
             this.cmbAttendanceStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbAttendanceStatus.FormattingEnabled = true;
             this.cmbAttendanceStatus.Location = new System.Drawing.Point(207, 174);
-            this.cmbAttendanceStatus.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbAttendanceStatus.Margin = new System.Windows.Forms.Padding(2);
             this.cmbAttendanceStatus.Name = "cmbAttendanceStatus";
             this.cmbAttendanceStatus.Size = new System.Drawing.Size(177, 25);
             this.cmbAttendanceStatus.TabIndex = 41;
@@ -118,7 +118,7 @@ namespace DBproject
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.Location = new System.Drawing.Point(419, 133);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(2);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(87, 26);
             this.btnSave.TabIndex = 42;
@@ -133,7 +133,7 @@ namespace DBproject
             this.Homebtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Homebtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Homebtn.Location = new System.Drawing.Point(419, 253);
-            this.Homebtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Homebtn.Margin = new System.Windows.Forms.Padding(2);
             this.Homebtn.Name = "Homebtn";
             this.Homebtn.Size = new System.Drawing.Size(87, 26);
             this.Homebtn.TabIndex = 43;
@@ -148,7 +148,7 @@ namespace DBproject
             this.MngAssesmentbtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.MngAssesmentbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MngAssesmentbtn.Location = new System.Drawing.Point(419, 190);
-            this.MngAssesmentbtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MngAssesmentbtn.Margin = new System.Windows.Forms.Padding(2);
             this.MngAssesmentbtn.Name = "MngAssesmentbtn";
             this.MngAssesmentbtn.Size = new System.Drawing.Size(87, 26);
             this.MngAssesmentbtn.TabIndex = 44;
@@ -161,10 +161,11 @@ namespace DBproject
             this.panel1.BackColor = System.Drawing.Color.IndianRed;
             this.panel1.Controls.Add(this.label4);
             this.panel1.Location = new System.Drawing.Point(9, 9);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(614, 64);
             this.panel1.TabIndex = 45;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label4
             // 
@@ -182,7 +183,7 @@ namespace DBproject
             this.cmbRegNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbRegNo.FormattingEnabled = true;
             this.cmbRegNo.Location = new System.Drawing.Point(207, 98);
-            this.cmbRegNo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbRegNo.Margin = new System.Windows.Forms.Padding(2);
             this.cmbRegNo.Name = "cmbRegNo";
             this.cmbRegNo.Size = new System.Drawing.Size(177, 25);
             this.cmbRegNo.TabIndex = 46;
@@ -215,7 +216,7 @@ namespace DBproject
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "StudentAttendence";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "StudentAttendence";
