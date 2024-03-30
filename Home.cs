@@ -61,5 +61,12 @@ namespace DBproject
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            StudentResult studentResult = new StudentResult();
+            studentResult.Show();
+        }
     }
 }

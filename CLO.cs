@@ -202,12 +202,21 @@ namespace DBproject
                 using (SqlConnection connection = new SqlConnection(ConnectionString))
                 {
                     connection.Open();
-
+                    
                     using (SqlCommand sqlCommand = new SqlCommand(deleteQuery, connection))
                     {
+                        int rowsAffected = 0;
                         sqlCommand.Parameters.AddWithValue("@Id", ID);
-
-                        int rowsAffected = sqlCommand.ExecuteNonQuery();
+                        try
+                        {
+                            rowsAffected = sqlCommand.ExecuteNonQuery();
+                        }
+                        catch
+                        {
+                            MessageBox.Show("This is Haram , Bro");
+                            return;
+                        }
+                        
 
                         if (rowsAffected > 0)
                         {
